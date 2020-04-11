@@ -7,9 +7,11 @@ import Total from "./components/Total";
 import { connect } from "react-redux";
 const App = (props) => {
   return (
-    <div className="boxes">
-      <div className="box">
-        <Header />
+    <div className="boxes is-ancestor">
+      <div className="box is-parent">
+        <div className="tile">
+          <Header />
+        </div>
         <AddedFeatures />
       </div>
       <div className="box">
